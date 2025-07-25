@@ -11,7 +11,7 @@ bower_components/
 
 # Production
 build/
-dist/
+docs/
 
 # Misc
 .DS_Store
