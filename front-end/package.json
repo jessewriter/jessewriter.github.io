@@ -2,14 +2,13 @@
   "name": "jessewriter.github.io",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "dev": "vite",
     "start": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -21,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/jessewriter/jessewriter.github.io/issues"
   },
-  "homepage": "https://github.com/jessewriter/jessewriter.github.io",
+  "homepage": "https://jessewriter.github.io/",
   "dependencies": {
     "lucide-react": "^0.525.0",
     "react": "^19.1.0",
@@ -32,6 +31,7 @@
     "@tailwindcss/cli": "^4.1.11",
     "@tailwindcss/vite": "^4.1.11",
     "@vitejs/plugin-react": "^4.2.1",
+    "gh-pages": "^6.3.0",
     "parcel": "^2.15.4",
     "vite": "^5.2.0"
   }
