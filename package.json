@@ -1,7 +1,7 @@
 {
   "name": "jessewriter.github.io",
   "version": "1.0.0",
-  "description": "",
+  "description": "an online resume",
   "scripts": {
     "dev": "vite",
     "start": "vite",
@@ -21,6 +21,7 @@
     "url": "https://github.com/jessewriter/jessewriter.github.io/issues"
   },
   "homepage": "https://jessewriter.github.io/",
+  "base": "jessewriter.github.io",
   "dependencies": {
     "lucide-react": "^0.525.0",
     "react": "^19.1.0",
