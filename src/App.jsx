@@ -84,7 +84,7 @@ const App = () => {
       username: "jessewriter",
       url: "https://github.com/jessewriter",
       description: "Contributes to open-source projects and maintains personal repositories with proof-of-concept sketches.",
-      icon: <Github className="w-6 h-6 text-gray-800" />
+      icon: <Github className="w-6 h-6 text-gray-300" />
     },
     {
       platform: "Stack Overflow",
@@ -104,27 +104,27 @@ const App = () => {
   ];
 
   return (
-    <div className="bg-gray-50 min-h-screen font-sans text-gray-800">
-      <header className="bg-white shadow-md sticky top-0 z-20">
+    <div className="bg-gray-950 min-h-screen font-sans text-gray-500">
+      <header className="bg-gray-900 shadow-md sticky top-0 z-20">
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-          <div className="text-2xl font-bold text-gray-900">
+          <div className="text-2xl font-bold text-gray-300">
             Jesse Boyd
           </div>
           <nav className="hidden md:flex space-x-8">
             {navLinks.map(link => (
-              <a key={link.href} href={link.href} className="text-gray-600 hover:text-blue-600 transition-colors duration-300">{link.label}</a>
+              <a key={link.href} href={link.href} className="text-gray-300 hover:text-blue-400 transition-colors duration-300">{link.label}</a>
             ))}
           </nav>
           <div className="md:hidden">
-            <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-gray-600 focus:outline-none">
+            <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-gray-300 focus:outline-none">
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
         </div>
         {isMenuOpen && (
-          <nav className="md:hidden bg-white py-4">
+          <nav className="md:hidden bg-gray-900 py-4">
             {navLinks.map(link => (
-              <a key={link.href} href={link.href} onClick={() => setIsMenuOpen(false)} className="block text-center py-2 px-4 text-gray-600 hover:bg-gray-100">{link.label}</a>
+              <a key={link.href} href={link.href} onClick={() => setIsMenuOpen(false)} className="block text-center py-2 px-4 text-gray-300 hover:bg-gray-800">{link.label}</a>
             ))}
           </nav>
         )}
@@ -133,46 +133,46 @@ const App = () => {
       <main className="container mx-auto px-6 py-12">
         {/* Hero Section */}
         <section id="hero" className="text-center py-16">
-          <h1 className="text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight">
+          <h1 className="text-5xl md:text-6xl font-extrabold text-gray-300 leading-tight">
             Jesse Boyd
           </h1>
-          <p className="mt-4 text-xl md:text-2xl text-blue-600 font-semibold">
+          <p className="mt-4 text-xl md:text-2xl text-teal-500 font-semibold">
             Senior Full Stack Engineer | Front-End Architecture & Modernization Specialist
           </p>
           <div className="mt-8 flex justify-center items-center space-x-6">
-            <a href="mailto:jesseboydconsulting@gmail.com" className="text-gray-600 hover:text-blue-600 transition-colors duration-300" aria-label="Email"><Mail size={28} /></a>
-            <a href="https://linkedin.com/in/mriesseboyd" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600 transition-colors duration-300" aria-label="LinkedIn"><Linkedin size={28} /></a>
-            <a href="https://github.com/jessewriter" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600 transition-colors duration-300" aria-label="GitHub"><Github size={28} /></a>
+            <a href="mailto:jesseboydconsulting@gmail.com" className="text-gray-300 hover:text-teal-400 transition-colors duration-300" aria-label="Email"><Mail size={28} /></a>
+            <a href="https://linkedin.com/in/mriesseboyd" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-teal-400 transition-colors duration-300" aria-label="LinkedIn"><Linkedin size={28} /></a>
+            <a href="https://github.com/jessewriter" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-teal-400 transition-colors duration-300" aria-label="GitHub"><Github size={28} /></a>
             <a href="https://stackoverflow.com/users/5369132/jesseboyd" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-orange-500 transition-colors duration-300" aria-label="Stack Overflow"><StackOverflowIcon className="w-7 h-7" /></a>
           </div>
         </section>
 
         {/* Summary Section */}
         <section id="summary" className="py-16">
-          <div className="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-xl shadow-lg">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">Professional Summary</h2>
-            <p className="text-lg text-gray-700 leading-relaxed">
+          <div className="max-w-4xl mx-auto bg-gray-900 p-8 md:p-12 rounded-xl shadow-lg">
+            <h2 className="text-3xl font-bold text-gray-300 mb-6">Professional Summary</h2>
+            <p className="text-lg text-gray-300 leading-relaxed">
               Results-driven Senior Full Stack Engineer with over 10 years of experience specializing in front-end architecture, modernization, and scalable web applications. Proficient in JavaScript, TypeScript, React, Angular, and Java Spring Boot, with a proven track record of delivering intuitive, high-performance solutions that minimize technical debt and align with stakeholder objectives. Adept at leading proof-of-concept (POC) projects, optimizing development workflows, and mentoring teams in modern development practices.
             </p>
           </div>
         </section>
 
         {/* Skills Section */}
-        <section id="skills" className="py-16 bg-gray-100 -mx-6 px-6">
+        <section id="skills" className="py-16 bg-gray-900 -mx-6 px-6">
             <div className="max-w-6xl mx-auto">
-                <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Core Competencies</h2>
+                <h2 className="text-3xl font-bold text-gray-100 mb-12 text-center">Core Competencies</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <SkillCard title="Languages & Frameworks" icon={<Code className="w-8 h-8 text-blue-500" />} skills={skills.languagesFrameworks} />
-                    <SkillCard title="Tools & Technologies" icon={<Briefcase className="w-8 h-8 text-blue-500" />} skills={skills.toolsTechnologies} />
-                    <SkillCard title="Architecture & Practices" icon={<Cpu className="w-8 h-8 text-blue-500" />} skills={skills.architecturePractices} />
-                    <SkillCard title="Current Focus" icon={<ChevronsRight className="w-8 h-8 text-blue-500" />} skills={skills.currentFocus} />
+                    <SkillCard title="Languages & Frameworks" icon={<Code className="w-8 h-8 text-blue-600" />} skills={skills.languagesFrameworks} />
+                    <SkillCard title="Tools & Technologies" icon={<Briefcase className="w-8 h-8 text-blue-600" />} skills={skills.toolsTechnologies} />
+                    <SkillCard title="Architecture & Practices" icon={<Cpu className="w-8 h-8 text-blue-600" />} skills={skills.architecturePractices} />
+                    <SkillCard title="Current Focus" icon={<ChevronsRight className="w-8 h-8 text-blue-600" />} skills={skills.currentFocus} />
                 </div>
             </div>
         </section>
 
         {/* Experience Section */}
         <section id="experience" className="py-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Professional Experience</h2>
+            <h2 className="text-3xl font-bold text-gray-300 mb-12 text-center">Professional Experience</h2>
             <div className="max-w-4xl mx-auto relative border-l-2 border-blue-200 pl-8">
                 {experiences.map((exp, index) => (
                     <ExperienceItem key={index} {...exp} />
@@ -181,19 +181,19 @@ const App = () => {
         </section>
 
         {/* Education & Certs Section */}
-        <section id="education" className="py-16 bg-gray-100 -mx-6 px-6">
+        <section id="education" className="py-16 bg-gray-900 -mx-6 px-6">
             <div className="max-w-4xl mx-auto text-center">
-                <h2 className="text-3xl font-bold text-gray-900 mb-12">Education & Training</h2>
+                <h2 className="text-3xl font-bold text-gray-300 mb-12">Education & Training</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-                    <div className="bg-white p-8 rounded-xl shadow-lg text-left">
+                    <div className="bg-gray-800 p-8 rounded-xl shadow-lg text-left">
                         <div className="flex items-center mb-4">
                             <GraduationCap className="w-10 h-10 text-blue-500 mr-4" />
                             <h3 className="text-2xl font-semibold text-gray-800">Education</h3>
                         </div>
-                        <p className="text-lg font-medium text-gray-700">{education.degree}</p>
-                        <p className="text-md text-gray-500">{education.university}</p>
+                        <p className="text-lg font-medium text-gray-300">{education.degree}</p>
+                        <p className="text-md text-gray-300">{education.university}</p>
                     </div>
-                    <div className="bg-white p-8 rounded-xl shadow-lg text-left">
+                    <div className="bg-gray-800 p-8 rounded-xl shadow-lg text-left">
                         <div className="flex items-center mb-4">
                             <Award className="w-10 h-10 text-blue-500 mr-4" />
                             <h3 className="text-2xl font-semibold text-gray-800">Additional Training</h3>
@@ -202,7 +202,7 @@ const App = () => {
                            {certifications.map(cert => (
                                <li key={cert} className="flex items-start">
                                    <ChevronsRight className="w-5 h-5 text-green-500 mt-1 mr-2 flex-shrink-0" />
-                                   <span className="text-gray-700">{cert}</span>
+                                   <span className="text-gray-300">{cert}</span>
                                </li>
                            ))}
                         </ul>
@@ -214,7 +214,7 @@ const App = () => {
 
         {/* Contributions Section */}
         <section id="contributions" className="py-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Professional Contributions</h2>
+            <h2 className="text-3xl font-bold text-gray-300 mb-12 text-center">Professional Contributions</h2>
             <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
                 {contributions.map((contrib) => (
                     <ContributionCard key={contrib.platform} {...contrib} />
@@ -223,18 +223,18 @@ const App = () => {
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="py-16 bg-blue-600 text-white -mx-6 px-6">
+        <section id="contact" className="py-16 bg-blue-600 text-gray-400 -mx-6 px-6">
             <div className="max-w-4xl mx-auto text-center">
                 <h2 className="text-3xl font-bold mb-4">Let's Build Something Great</h2>
                 <p className="text-lg text-blue-100 mb-8 max-w-2xl mx-auto">I'm actively seeking new contract opportunities and collaborations. If you have a project in mind or want to discuss how I can help your team, please get in touch.</p>
-                <a href="mailto:jesseboydconsulting@gmail.com" className="bg-white text-blue-600 font-bold py-3 px-8 rounded-full hover:bg-blue-100 transition-all duration-300 text-lg shadow-lg">
+                <a href="mailto:jesseboydconsulting@gmail.com" className="bg-gray-800 text-blue-600 font-bold py-3 px-8 rounded-full hover:bg-blue-100 transition-all duration-300 text-lg shadow-lg">
                     Contact Me
                 </a>
             </div>
         </section>
       </main>
 
-      <footer className="bg-gray-800 text-white py-6">
+      <footer className="bg-gray-800 text-gray-500 py-6">
         <div className="container mx-auto px-6 text-center">
             <p>&copy; {new Date().getFullYear()} Jesse Boyd. All Rights Reserved.</p>
         </div>
@@ -246,14 +246,14 @@ const App = () => {
 // Sub-components for better organization
 
 const SkillCard = ({ title, icon, skills }) => (
-    <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <div className="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
         <div className="flex items-center mb-4">
             {icon}
-            <h3 className="text-xl font-semibold text-gray-800 ml-3">{title}</h3>
+            <h3 className="text-xl font-semibold text-gray-100 ml-3">{title}</h3>
         </div>
         <ul className="space-y-2">
             {skills.map(skill => (
-                <li key={skill} className="text-gray-600">{skill}</li>
+                <li key={skill} className="text-gray-200">{skill}</li>
             ))}
         </ul>
     </div>
@@ -261,15 +261,15 @@ const SkillCard = ({ title, icon, skills }) => (
 
 const ExperienceItem = ({ role, company, date, points }) => (
     <div className="mb-12">
-        <div className="absolute w-4 h-4 bg-blue-500 rounded-full -left-[2.5rem] mt-1.5 border-4 border-white"></div>
-        <h3 className="text-2xl font-semibold text-gray-900">{role}</h3>
+        <div className="absolute w-4 h-4 bg-blue-500 rounded-full -left-[2.5rem] mt-1.5 border-4 border-gray-500"></div>
+        <h3 className="text-2xl font-semibold text-gray-300">{role}</h3>
         <p className="text-lg font-medium text-blue-600 mb-1">{company}</p>
         <p className="text-sm text-gray-500 mb-4">{date}</p>
         <ul className="space-y-2">
             {points.map((point, i) => (
                 <li key={i} className="flex items-start">
                     <ChevronsRight className="w-5 h-5 text-green-500 mt-1 mr-2 flex-shrink-0" />
-                    <span className="text-gray-700">{point}</span>
+                    <span className="text-gray-300">{point}</span>
                 </li>
             ))}
         </ul>
@@ -277,13 +277,13 @@ const ExperienceItem = ({ role, company, date, points }) => (
 );
 
 const ContributionCard = ({ platform, username, url, description, icon }) => (
-    <a href={url} target="_blank" rel="noopener noreferrer" className="block bg-white p-6 rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+    <a href={url} target="_blank" rel="noopener noreferrer" className="block bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
         <div className="flex items-center mb-3">
             {icon}
-            <h3 className="text-2xl font-semibold text-gray-800 ml-3">{platform}</h3>
+            <h3 className="text-2xl font-semibold text-gray-400 ml-3">{platform}</h3>
         </div>
-        <p className="text-gray-600 mb-2">@{username}</p>
-        <p className="text-gray-700">{description}</p>
+        <p className="text-teal-300 mb-2">@{username}</p>
+        <p className="text-gray-300">{description}</p>
     </a>
 );
 

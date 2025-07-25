@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+/* Custom dark theme */
+@theme {
+  --color-bg: #1a1a1a;            /* Dark gray background */
+  --color-bg-muted: #2a2a2a;      /* Slightly lighter for sections */
+  --color-fg: #e0e0e0;            /* Light gray text */
+  --color-accent: #14b8a6;        /* Teal 500 */
+  --color-accent-muted: #0f766e;  /* Teal 700 */
+  --color-border: #333333;        /* Divider lines */
+
+  --radius-md: 0.5rem;
+  --shadow-md: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
